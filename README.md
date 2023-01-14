@@ -12,7 +12,9 @@
 
 ## 알아주세요!
 - 혹시 이름이 잘못되었다면 수정해주세요! (죄송합니다!!!!!!!)
-
+- 저희 스터디는 순수 algorism 문제풀기 스터디이기 때문에 다른 CS 스터디와 함께 하시는 것을 추천드립니다! <br>
+  (물론 여유가 조금 생기고 스터디원 다수가 원하시면 CS도 병행해도 되긴 합니다!)
+  
 ## 문제
 > day1
 - [B_3003](https://www.acmicpc.net/problem/3003) [B_2588](https://www.acmicpc.net/problem/2588) [B_10171](https://www.acmicpc.net/problem/10171) [SWEA_4828](https://swexpertacademy.com/main/learn/course/subjectList.do?courseId=AVuPDN86AAXw5UW6)
