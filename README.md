@@ -1,6 +1,6 @@
 #  A등급까지 걸어가기
 
-### git pull / git status를 생활화 합시다!
+### git status / git pull 를 생활화 합시다!
 
 ## 규칙
 1. 스터디와 관계없는 내용은 올리지 않는다.
