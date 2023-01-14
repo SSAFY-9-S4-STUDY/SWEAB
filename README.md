@@ -16,11 +16,12 @@
   (물론 여유가 조금 생기고 스터디원 다수가 원하시면 CS도 병행해도 되긴 합니다!)
   
 ## 관련 URL LINK
-#### [스터디스코드](https://discord.gg/Mh8Tz94efm)
 #### [백준](https://www.acmicpc.net/)
 #### [SWEA](https://swexpertacademy.com/main/main.do)
 #### [서울_4반_notion](https://www.notion.so/hg-edu/4-08695be2b177463ea947c74f81ee8f49)
 #### [스터디_notion](https://www.notion.so/34a5043cb73440378a1015001f705846?v=49e3512734994ce6b2c41f01a9706f9a)
+#### [SSAFY_edu](https://edu.ssafy.com/)
+#### [스터디스코드](https://discord.gg/Mh8Tz94efm)
   
 ## 문제
 > day1
