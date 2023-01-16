@@ -26,7 +26,9 @@
 #### [스터디스코드](https://discord.gg/Mh8Tz94efm)
   
 ## 문제
-> day1
+> day1 기본연산 & 사전학습 비슷한 문제
 - [B_3003](https://www.acmicpc.net/problem/3003) [B_2588](https://www.acmicpc.net/problem/2588) [B_10171](https://www.acmicpc.net/problem/10171) [SWEA_4828](https://swexpertacademy.com/main/learn/course/subjectList.do?courseId=AVuPDN86AAXw5UW6)
 - SWEA_4828의 경우 링크 들어가신 후 LIST1 - 6차시를 보시면 있습니다.
-> day2
+> day2 조건문 & 반복문
+- [B_2884](https://www.acmicpc.net/problem/2884) [B_1110](https://www.acmicpc.net/problem/1110) [SWEA_2027](https://swexpertacademy.com/main/code/problem/problemList.do?contestProbId=&categoryId=&categoryType=&problemTitle=2027&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)
+- SWEA_2027의 경우 Code - problem - 2027 검색하셔도 됩니다.
