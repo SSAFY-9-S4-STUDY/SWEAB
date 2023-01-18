@@ -1,10 +1,9 @@
 N = int(input())
 first_num = N
 
-if N < 10:
-    N = N * 11
-else:
+if:
     N = ((N % 10) * 10) + (((N // 10) + (N % 10)) % 10)
+
 i = 1
 
 while N != first_num:
