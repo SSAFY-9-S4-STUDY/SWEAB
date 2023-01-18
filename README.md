@@ -24,6 +24,8 @@
 #### [스터디_notion](https://www.notion.so/34a5043cb73440378a1015001f705846?v=49e3512734994ce6b2c41f01a9706f9a)
 #### [SSAFY_edu](https://edu.ssafy.com/)
 #### [스터디스코드](https://discord.gg/Mh8Tz94efm)
+#### [서울 4반 Lab](https://lab.ssafy.com/s09/a04)
+#### [SSAFY daily 실습](https://project.ssafy.com/home)
   
 ## 문제
 > day1 기본연산 & 사전학습 비슷한 문제
