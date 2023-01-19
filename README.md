@@ -34,3 +34,5 @@
 > day2 조건문 & 반복문
 - [B_2884](https://www.acmicpc.net/problem/2884) [B_1110](https://www.acmicpc.net/problem/1110) [SWEA_2027](https://swexpertacademy.com/main/code/problem/problemList.do?contestProbId=&categoryId=&categoryType=&problemTitle=2027&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1)
 - SWEA_2027의 경우 Code - problem - 2027 검색하셔도 됩니다.
+> day3 배열 & 함수
+- [B_8958](https://www.acmicpc.net/problem/8958) [B_4344](https://www.acmicpc.net/problem/4344) [B_1065](https://www.acmicpc.net/problem/1065) [S_2001](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PzOCKAigDFAUq&categoryId=AV5PzOCKAigDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=1)
