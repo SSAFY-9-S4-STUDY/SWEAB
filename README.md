@@ -36,3 +36,5 @@
 - SWEA_2027의 경우 Code - problem - 2027 검색하셔도 됩니다.
 > day3 배열 & 함수
 - [B_8958](https://www.acmicpc.net/problem/8958) [B_4344](https://www.acmicpc.net/problem/4344) [B_1065](https://www.acmicpc.net/problem/1065) [S_2001](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PzOCKAigDFAUq&categoryId=AV5PzOCKAigDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=1)
+> day 4 기본 수학 & 이중배열
+- [B_10250](https://www.acmicpc.net/problem/10250) [B_2839](https://www.acmicpc.net/problem/2839) [S_1945](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5Pl0Q6ANQDFAUq&categoryId=AV5Pl0Q6ANQDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=2) [S_1979](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PuPq6AaQDFAUq&categoryId=AV5PuPq6AaQDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=1)
