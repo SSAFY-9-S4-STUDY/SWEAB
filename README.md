@@ -41,3 +41,5 @@
 - [B_10250](https://www.acmicpc.net/problem/10250) [B_2839](https://www.acmicpc.net/problem/2839) [S_1945](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5Pl0Q6ANQDFAUq&categoryId=AV5Pl0Q6ANQDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=2) [S_1979](https://swexpertacademy.com/main/code/problem/problemDetail.do?problemLevel=2&contestProbId=AV5PuPq6AaQDFAUq&categoryId=AV5PuPq6AaQDFAUq&categoryType=CODE&problemTitle=&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=2&pageSize=10&pageIndex=1)
 > day 5 기본 수학2 & 이중배열
 - [S_4831](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDN86AAXw5UW6&subjectId=AWOVFCzaqeUDFAWg) [B_2563](https://www.acmicpc.net/problem/2563) [B_1929](https://www.acmicpc.net/problem/1929)
+> day 6 정렬 & 재귀 & 브루트포스
+- [B_11650](https://www.acmicpc.net/problem/11650) [B_1181](https://www.acmicpc.net/problem/1181) [B_2798](https://www.acmicpc.net/problem/2798) [B_11729](https://www.acmicpc.net/problem/11729)
