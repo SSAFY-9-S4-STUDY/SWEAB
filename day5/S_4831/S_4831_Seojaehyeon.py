@@ -14,11 +14,11 @@ for tc in range(1, T+1):
     charge = 0  # 충전수
     i = 0
 
-    while here + K < N:  # while 종점 도달까지
+    while here + K < N:  # while 종점까지
         
-        for move in range(K, 0, -1): # 이동거리는 K부터 0 순서로 대입
+        for move in range(K, 0, -1): # 이동거리(move)는 K부터 0 순으로 대입
 
-            if (here + move) in stops:  # if 이동거리 안에 충전소가 있으면
+            if (here + move) in stops:  # if 이동거리(move) 안에 충전소가 있으면
                 here += move  # 충전소를 현위치로 저장
                 charge += 1  # 충전수 +1
                 break
