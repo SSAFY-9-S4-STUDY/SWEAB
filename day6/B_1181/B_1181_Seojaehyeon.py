@@ -17,7 +17,7 @@ for word in words:
 for lst in two_d_lst:
     lst.sort()
 
-# 다시 words에 하나의 []로 저장
+# 다시 words[]에 저장
 words = sum(two_d_lst, [])
 
 for i in words:
