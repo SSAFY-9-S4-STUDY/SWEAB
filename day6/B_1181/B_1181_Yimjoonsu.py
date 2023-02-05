@@ -9,3 +9,4 @@ words_lst.sort(key=lambda x: len(x))
 
 for i in words_lst:
     print(i)
+    

@@ -9,3 +9,4 @@ arr.sort()
 
 for i, j in arr:
     print(i, j)
+    
