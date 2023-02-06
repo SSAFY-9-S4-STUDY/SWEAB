@@ -43,3 +43,5 @@
 - [S_4831](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDN86AAXw5UW6&subjectId=AWOVFCzaqeUDFAWg) [B_2563](https://www.acmicpc.net/problem/2563) [B_1929](https://www.acmicpc.net/problem/1929)
 > day 6 정렬 & 재귀 & 브루트포스
 - [B_11650](https://www.acmicpc.net/problem/11650) [B_1181](https://www.acmicpc.net/problem/1181) [B_2798](https://www.acmicpc.net/problem/2798) [B_11729](https://www.acmicpc.net/problem/11729)
+> day 7 정렬, 집합, 재귀
+[S_11315_오목](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AXaSUPYqPYMDFASQ&categoryId=AXaSUPYqPYMDFASQ&categoryType=CODE&problemTitle=11315&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1) [B_1620_포켓몬](https://www.acmicpc.net/problem/1620) [B_2447_](https://www.acmicpc.net/problem/2447)
