@@ -23,7 +23,6 @@
 #### [서울_4반_notion](https://www.notion.so/hg-edu/4-08695be2b177463ea947c74f81ee8f49)
 #### [스터디_notion](https://www.notion.so/34a5043cb73440378a1015001f705846?v=49e3512734994ce6b2c41f01a9706f9a)
 #### [SSAFY_edu](https://edu.ssafy.com/)
-#### [스터디스코드](https://discord.gg/Mh8Tz94efm)
 #### [서울 4반 Lab](https://lab.ssafy.com/s09/a04)
 #### [SSAFY daily 실습](https://project.ssafy.com/home)
 #### [알고리즘 도움되는 유튜브 강의](https://www.youtube.com/watch?v=2zjoKjt97vQ&list=PLRx0vPvlEmdAghTr5mXQxGpHjWqSz0dgC&index=1)
