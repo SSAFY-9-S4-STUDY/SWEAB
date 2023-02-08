@@ -1,4 +1,5 @@
 from sys import stdin
+stdin = open("input.txt")
 
 def input():
     return stdin.readline().rstrip()
@@ -23,7 +24,7 @@ for _ in range(M):
         print(name.get(quest))
 
 
-# ////////////////// Runtime Error //////////////////////
+# ///////////////////// 시간초과 /////////////////////////
 book = []  # book : [] -- 포켓몬 도감
 for _ in range(N):
     book.append(input())
@@ -36,6 +37,7 @@ for _ in range(M):
     # except문 : quest가 str형일 경우, 도감에서 포켓몬 번호 출력
     try:
         print(book[int(quest)-1])
+
     except ValueError:
         for idx in range(N):
             if book[idx] == quest:
