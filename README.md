@@ -44,3 +44,5 @@
 - [B_11650](https://www.acmicpc.net/problem/11650) [B_1181](https://www.acmicpc.net/problem/1181) [B_2798](https://www.acmicpc.net/problem/2798) [B_11729](https://www.acmicpc.net/problem/11729)
 > day 7 정렬, 집합, 재귀
 - [S_11315_오목](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AXaSUPYqPYMDFASQ&categoryId=AXaSUPYqPYMDFASQ&categoryType=CODE&problemTitle=11315&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1) [B_1620_포켓몬](https://www.acmicpc.net/problem/1620) [B_2447_별](https://www.acmicpc.net/problem/2447)
+> day 8 기하, 정수론 및 조합론
+- [B_1004_어린왕자](https://www.acmicpc.net/problem/1004) [B_2981_검문](https://www.acmicpc.net/problem/2981) [B_11051_이항계수2](https://www.acmicpc.net/problem/11051) [B_1010_다리놓기](https://www.acmicpc.net/problem/1010)
