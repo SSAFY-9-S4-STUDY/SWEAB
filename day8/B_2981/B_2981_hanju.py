@@ -6,8 +6,8 @@ def common_divsor(n, m):
         if n % i == 0:
             if i > m:
                 res.append(i)
-            if n // i > 0:
-                res.append(n // i )
+            if n // i > m:
+                res.append(n // i)
     return res
 
 def gcd(lst, n):
@@ -32,7 +32,7 @@ answer = []
 if second_value > min_value * 2:
     tmp = gcd(list(map(lambda x: x-min_value, numbers[1:])), N-1)
     if tmp > min_value:
-        answer = common_divsor(tmp,1)
+        answer = common_divsor(tmp,min_value)
 
 
 # 최솟값까지 탐색
@@ -44,18 +44,22 @@ for div in range(min_value,1,-1):
             if numbers[i] % div != mod:
                 break
         else:
-            m[div] = 1
+            for i in common_divsor(div,1):
+                m[i] = 1
 
 
 for i in range(2, min_value+1):
     if m[i]:
         answer.append(i)
 
-tmp = 0 
-for n in sorted(answer)[1:]:
-    if n != tmp:
-        print(n, end=' ')
-        tmp = n
+
+tmp = 0
+for i in sorted(answer):
+    if i != tmp:
+        print(i, end=' ')
+        tmp = i
+
+
 
 
 
