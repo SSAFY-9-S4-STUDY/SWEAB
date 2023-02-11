@@ -1,10 +1,9 @@
 import sys
+input = sys.stdin.readline
 
-def input():
-    return sys.stdin.readline()
-
-def how_far(x1, y1, x2, y2):
+def how_far(x1, y1, x2, y2):  # 두 점 사이의 거리는?
     return ((x2 - x1) ** 2 + (y2 - y1) ** 2) ** 0.5
+
 
 T = int(input())  # 테스트케이스 : 2
 
@@ -15,9 +14,9 @@ for _ in range(T):
 
     for _ in range(N):
         cx, cy, r = map(int, input().split())
-        # 행성과 출발/도착점 사이 거리를 각각 구해주고
-        # if 거리 > 행성반지름 : pass
-        # else 거리 <= 반지름 : cnt +1
+        # 출발/도착점과 행성 간의 거리를 각각 구해주고
+        # 두 거리(dis1 and dis2) > 행성반지름 : pass
+        # 한 거리(dis1 or dis2) <= 반지름 : cnt +1
         dis1 = how_far(x1, y1, cx, cy)
         dis2 = how_far(x2, y2, cx, cy)
 
