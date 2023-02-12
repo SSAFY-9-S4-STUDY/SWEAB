@@ -16,7 +16,7 @@ for _ in range(T):
         cx, cy, r = map(int, input().split())
         # 출발/도착점과 행성 간의 거리를 각각 구해주고
         # 두 거리(dis1 and dis2) > 행성반지름 : pass
-        # 한 거리(dis1 or dis2) <= 반지름 : cnt +1
+        # 한 거리(dis1 or dis2) < 반지름 : cnt +1
         dis1 = how_far(x1, y1, cx, cy)
         dis2 = how_far(x2, y2, cx, cy)
 
