@@ -48,3 +48,5 @@
 - [S_11315_오목](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AXaSUPYqPYMDFASQ&categoryId=AXaSUPYqPYMDFASQ&categoryType=CODE&problemTitle=11315&orderBy=FIRST_REG_DATETIME&selectCodeLang=ALL&select-1=&pageSize=10&pageIndex=1) [B_1620_포켓몬](https://www.acmicpc.net/problem/1620) [B_2447_별](https://www.acmicpc.net/problem/2447)
 > day 8 기하, 정수론 및 조합론
 - [B_1004_어린왕자](https://www.acmicpc.net/problem/1004) [B_2981_검문](https://www.acmicpc.net/problem/2981) [B_11051_이항계수2](https://www.acmicpc.net/problem/11051) [B_1010_다리놓기](https://www.acmicpc.net/problem/1010)
+> day 9 기하, 정수론, 백트래킹
+- [B_2447_관형님의 참외밭](https://www.acmicpc.net/problem/2477) [B_2004_조합 0의 개수](https://www.acmicpc.net/problem/2004) [B_9663_N-Queen](https://www.acmicpc.net/problem/9663)
