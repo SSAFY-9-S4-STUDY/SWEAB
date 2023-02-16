@@ -1,3 +1,5 @@
+### 실패한 코드입니다.###
+
 import sys
 input = sys.stdin.readline
 
