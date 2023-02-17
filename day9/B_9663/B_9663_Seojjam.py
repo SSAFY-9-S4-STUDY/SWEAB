@@ -21,9 +21,9 @@ def DFS(i):
                 DFS(i + 1)          # 다음 행 검사
 
 
-def promising(arr, x):
-    for i in range(x):  # queen의 공격범위 안에 들면 return
-        if arr[x] == arr[i] or abs(arr[x] - arr[i]) == x - i:
+def promising(arr, i):
+    for x in range(i):  # queen의 공격범위 안에 들면 return
+        if arr[i] == arr[x] or abs(arr[i] - arr[x]) == i - x:
             return
     return True         # queen의 공격범위 밖에면 True
 
