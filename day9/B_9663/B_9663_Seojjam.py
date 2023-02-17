@@ -1,53 +1,36 @@
-### 실패한 코드입니다.###
+# ////////////// 주연님 코드 보고 공부했습니다. //////////////
 
-import sys
-input = sys.stdin.readline
+# < backtracking 진행절차 >
 
-N = int(input())
-cnt = 0  # N-Queen 개수
+# ① 상태공간트리의 깊이우선검색(DFS)을 실시
 
-for j in range(N):
-    chess = [[0] * N for _ in range(N)]
-    start_i, start_j = 0, j
-    # 스택에 좌표 추가
-    stack = [(start_i, start_j)]
+# ② 각 노드가 유망(promising)한지 점검
 
-    # 반복범위 : 스택이 빌 때 까지
-    while stack:
-        print(stack)
-        # 스택에서 좌표를 뽑기
-        new_i, new_j = stack.pop()
-
-        # Queen의 공격가능 좌표 1 처리
-        for k in range(N):
-            chess[new_i][k] = 1  # 행 1 처리
-            chess[k][new_j] = 1  # 열 1 처리
-            if new_i + k < N and new_j + k < N:  # 대각 1 처리
-                chess[new_i + k][new_j + k] = 1
-            if new_i + k < N and 0 <= new_j - k:  # 역대각 1 처리
-                chess[new_i + k][new_j - k] = 1
-
-        # 마지막 줄이 아니면
-        if new_i < N - 1:
-            new_i += 1  # 1열 내려와서 j값 검사
-        else: break
-
-        for r in range(N):
-            # 좌표값이 0이면 스택에 추가
-            if not chess[new_i][r]:
-                stack.append((new_i, r))
-                if new_i == N - 1: cnt += 1
-            # 좌표값이 1이면 넘어가~
-            else: continue
-        # for문 끝나면 다음 j에서 같은 과정 반복
-        else: continue
-    # while문 끝나면 다른 점에서 while문 start
-    else: continue
-
-print(cnt)
+# ③ 유망하지 않은 노드들은 더 이상 검색하지 않고 그 노드의 부모노드로 돌아가서 검색을 계속(pruning),\
+#   유망한 노드들은 그 노드의 자식노드를 검색
 
 
+def DFS(i):
+    global nqueen
+    if i == N:          # i가 N까지 오면 res +1
+        nqueen += 1
+    else:               # i가 N까지 올 동안 유망한지 계속 검사
+        for j in range(1, N + 1):
+            arr[i] = j              # arr에 어디 queen을 뒀는지 저장
+            if promising(arr, i):   # 유망한지 검사 후 양호하면
+                DFS(i + 1)          # 다음 행 검사
 
 
+def promising(arr, x):
+    for i in range(x):  # queen의 공격범위 안에 들면 return
+        if arr[x] == arr[i] or abs(arr[x] - arr[i]) == x - i:
+            return
+    return True         # queen의 공격범위 밖에면 True
 
 
+N = int(input())    # 체스판의 크기
+arr = [0] * N       # 각 행마다 어느 열에 queen을 뒀는지 list
+nqueen = 0             # N-Queen의 개수
+
+DFS(0)
+print(nqueen)
