@@ -50,5 +50,5 @@
 - [B_1004_어린왕자](https://www.acmicpc.net/problem/1004) [B_2981_검문](https://www.acmicpc.net/problem/2981) [B_11051_이항계수2](https://www.acmicpc.net/problem/11051) [B_1010_다리놓기](https://www.acmicpc.net/problem/1010)
 > day 9 기하, 정수론, 백트래킹
 - [B_2477_관형님의 참외밭](https://www.acmicpc.net/problem/2477) [B_2004_조합 0의 개수](https://www.acmicpc.net/problem/2004) [B_9663_N-Queen](https://www.acmicpc.net/problem/9663)
-> day 10 그리디 알고리즘, 스택, 누적합
+> day 10 그리디 알고리즘, 스택, 누적합  
 - [B_1931_회의실 배정하기](https://www.acmicpc.net/problem/1931) [B_25682_체스판](https://www.acmicpc.net/problem/25682) [B_1874_스택 수열](https://www.acmicpc.net/problem/1874)
