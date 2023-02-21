@@ -2,24 +2,21 @@ import sys
 input = sys.stdin.readline
 
 num = int(input())
-
 suyeul = [int(input()) for _ in range(num)]
-front = 0
 numbers = list(range(1, num + 1))
-stk = [0] * num
-idx = -1
-ans = []
+stk = []
 
+ans = []
+n = 0
 for i in numbers:
-    idx += 1
-    stk[idx] = i
+    stk.append(i)
     ans.append('+')
-    while idx != -1 and stk[idx] == suyeul[front]:
-        front += 1
-        idx -= 1
+    while stk and stk[-1] == suyeul[n]:
+        n += 1
+        stk.pop()
         ans.append('-')
 
-if idx != -1:
+if stk:
     print('NO')
 else:
     print('\n'.join(ans))
