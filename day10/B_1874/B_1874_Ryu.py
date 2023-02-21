@@ -5,12 +5,9 @@ num = int(input())
 
 suyeul = [int(input()) for _ in range(num)]
 front = 0
-
 numbers = list(range(1, num + 1))
-
 stk = [0] * num
 idx = -1
-
 ans = []
 
 for i in numbers:
