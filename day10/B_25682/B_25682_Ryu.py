@@ -16,4 +16,4 @@ for i in range(K - 1, N):
 
 print(min(K ** 2 -max(ans), min(ans)))
 
-# 주어진 나무 판자를 lst에 받아오려고 했으나
+# 주어진 나무 판자를 lst에 받아오려고 했으나 더 효율적인 코드를 위해서 생략
