@@ -1,36 +1,28 @@
-# [1] B -> 1, W -> 0으로 치환
-# [2] KxK 정사각형 내에 합계를 2가지 버전으로 구해줌
-# [3] for문 돌려서 구역별 합산에서 KxK 정사각형 합계를 빼주기
-# [4] 최솟값 출력
-
+# 끝내 구글링 했습니다.
 import sys
-sys.stdin = open("input.txt")
 input = sys.stdin.readline
 
+def chess(color):
+    prefix_sum = [[0] * (M + 1) for _ in range(N + 1)]
+    for i in range(N):
+        for j in range(M):
+            if not (i + j) % 2:
+                value = board[i][j] != color  # if board[i][j] != color : value=1
+            else:
+                value = board[i][j] == color  # if board[i][j] == color : value=1
+            prefix_sum[i+1][j+1] = prefix_sum[i][j+1] + prefix_sum[i+1][j] \
+                                   - prefix_sum[i][j] + value
+
+    count = sys.maxsize  # 64비트면 2**63 -1
+    for i in range(1, N - K + 2):
+        for j in range(1, M - K + 2):
+            count = min(count,
+                        prefix_sum[i + K - 1][j + K - 1] - prefix_sum[i + K - 1][j - 1] \
+                        - prefix_sum[i - 1][j + K - 1] + prefix_sum[i - 1][j - 1])
+    return count
+
+
+# N: 가로, M: 세로, K: 체스판
 N, M, K = map(int, input().split())
-chess = [list(input().rstrip()) for _ in range(N)]
-
-# B -> 1, W -> 0으로 치환
-for i in range(N):
-    for j in range(M):
-        if chess[i][j] == 'B':
-            chess[i][j] = 1
-        else:
-            chess[i][j] = 0
-
-# KxK 정사각형 합계
-# : W가 더 많으면 idx 0으로, B가 더 많으면 idx 1로 빼기
-k_sum = [K**2 // 2, K**2 // 2 + 1]
-
-# 구역별 합계에서 KxK 정사각형 합계 빼주기
-
-
-
-dis_sum = 0
-for i in range(N - K + 1):
-    for j in range(M - K + 1):
-        dis_sum += chess[i][j]
-dis_sum -
-
-
-
+board = [list(input().rstrip()) for _ in range(N)]
+print(min(chess('B'), chess('W')))
