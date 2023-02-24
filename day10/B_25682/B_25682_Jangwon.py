@@ -19,7 +19,7 @@ def balckandwhite(color):
 
     cnt = float('inf')
     for i in range(1, N - K + 2):
-        for j in range(1, N - K + 2):
+        for j in range(1, M - K + 2):
             cnt = min(cnt, presum[i + K - 1][j + K - 1] - presum[i + K - 1][j - 1] - presum[i - 1][j + K - 1] + presum[i - 1][j - 1])
 
     return cnt
