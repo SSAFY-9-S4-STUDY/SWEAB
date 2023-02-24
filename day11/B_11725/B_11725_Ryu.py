@@ -21,6 +21,8 @@ def find_jokbo(node):
 
 
 find_jokbo(1)
+
+재귀는 recursionerror가 뜹니다!!
 '''
 while top != -1:
     cur = stk[top]
