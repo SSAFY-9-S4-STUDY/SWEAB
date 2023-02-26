@@ -2,7 +2,7 @@ import sys
 input = sys.stdin.readline
 from collections import deque
 
-def bfs(E, R):  # E : 간선 집합, R : 시작 정점
+def bfs(R):  # R : 시작 정점
     order = 1  # 방문 순서
     visited[R] = order  # 시작 정점 R에 방문(순서) 표시
     q = deque([R])
@@ -29,7 +29,5 @@ for _ in range(M):
 for i in range(1, N + 1):
     E[i].sort()  # 정점 번호를 오름차순으로 방문하도록
 
-bfs(E, R)
-
-for node in visited[1::]:
-    print(node)
+bfs(R)
+print(*visited[1:], sep='\n')
