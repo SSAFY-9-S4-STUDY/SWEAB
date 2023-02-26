@@ -1,38 +1,35 @@
 import sys
-from collections import deque
-sys.stdin = open("sample_input.txt")
 input = sys.stdin.readline
+sys.stdin = open("sample_input.txt")
+from collections import deque
+
+# temp 저장된 각 간선의 연결 정보 중 노드번호 1이 포함된 정보에 대해서
+# 1번 노드를 루트로 지정하고, 방문 처리,
+# 다른 하나는 child 노드로 지정하고 똑같이 방문처리
+
+# 이후 방문 처리된 노드는 루트로 지정하고,
+# 다른 하나는 child 노드로 지정하고 방문처리
 
 N = int(input())
-tree = [[] for _ in range(N + 1)]
+temp = []
+visited = [0] * N
+ans = []   # 각 idx에 해당하는 노드의 부모노드를 저장
 
 for _ in range(N - 1):
     n1, n2 = map(int, input().split())
-    tree[n1].append(n2)
-    tree[n2].append(n1)
+    temp.append([n1, n2])
 
-queue = deque()
-queue.append(1)
-if 1 in [n1, n2]:
-    if n1 == 1:
-        tree[n2] = 1
-    else:
-        tree[n1] = 1
-elif tree[n1] or tree[n2]:
-    if tree[n1]:
-        tree[n2] = n1
-    else:
-        tree[n1] = n2
-else:
-    q.append([n1, n2])
+for n1, n2 in temp:
+    if 1 in [n1, n2]:
+        if n1 == 1:
+            ans[n2] = n1
+        else:
+            ans[n1] = n2
+        visited[n1], visited[n2] = 1, 1
 
 while q:
-    n1, n2 = q.pop(0)
 
-    if tree[n1]:
-        tree[n2] = n1
-    elif tree[n2]:
-        tree[n1] = n2
+
 
 for i in range(2, N + 1):
     print(tree[i])
