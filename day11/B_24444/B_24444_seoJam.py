@@ -2,32 +2,33 @@ import sys
 input = sys.stdin.readline
 from collections import deque
 
-def bfs(V, E, R):  # V : 정점 집합, E : 간선 집합, R : 시작 정점
+def bfs(E, R):  # E : 간선 집합, R : 시작 정점
+    order = 1  # 방문 순서
+    visited[R] = order  # 시작 정점 R에 방문(순서) 표시
     q = deque([R])
-    visited[R] = 1  # 시작 정점 R을 방문 했다고 표시한다.
-    count = 2
+    q.append(R)  # 큐 맨 뒤에 시작 정점 R을 추가
 
     while q:
-        q.popleft()  # 큐 맨 앞쪽의 요소를 삭제한다.
-        for i in E[R]:  # E(u) : 정점 u의 인접 정점 집합
-            if not visited[i]:
-                visited[i] = count  # 정점 v를 방문 했다고 표시한다.
-                q.append(i)  # 큐 맨 뒤에 정점 v를 추가한다.
-                count += 1
+        me = q.popleft()  # 큐 맨 앞쪽의 요소를 삭제
+        for near in E[me]:  # E(u) : 정점 u의 인접 정점 집합
+            if not visited[near]:
+                order += 1
+                visited[near] = order  # 정점 v 방문(순서) 표시
+                q.append(near)  # 큐 맨 뒤에 정점 v를 추가
 
 
 N, M, R = map(int, input().split())
-visited = [0] * (N + 1)
 E = [[] for _ in range(N + 1)]
+visited = [0] * (N + 1)
 
 for _ in range(M):
     u, v = map(int, input().split())
     E[u].append(v)
     E[v].append(u)
 
-for i in range(N + 1):
-    E[i].sort()
+for i in range(1, N + 1):
+    E[i].sort()  # 정점 번호를 오름차순으로 방문하도록
 
-bfs(N, E, R)
-for i in visited[1::]:
-    print(i)
+bfs(E, R)
+for node in visited[1::]:
+    print(node)

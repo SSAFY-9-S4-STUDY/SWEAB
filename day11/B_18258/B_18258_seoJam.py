@@ -7,10 +7,10 @@ from collections import deque
 # 속도가 리스트에 비해 굉장히 빠르다. List = O(n), deque = O(1)
 # 당연하지만 큐작업이 훨씬 편해진다.
 
-n = int(input())
+N = int(input())
 q = deque([])
 
-for i in range(n):
+for i in range(N):
     temp = input().split()
 
     if temp[0] == 'push':
