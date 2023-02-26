@@ -4,7 +4,7 @@ input = sys.stdin.readline
 # 잔머리 써가면서 10**5로 맞춰주니까 합격했씁니다...후
 sys.setrecursionlimit(10**5)
 
-def dfs(R):  # E : 간선 집합, R : 시작 정점
+def dfs(R):  # R : 시작 정점
     global order
     order += 1
     visited[R] = order  # 시작 정점 R에 방문(순서) 표시
@@ -28,5 +28,5 @@ for i in range(1, N + 1):
     E[i].sort()  # 정점 번호를 오름차순으로 방문하도록
 
 dfs(R)
-print(*visited[1::], sep='\n')
+print(*visited[1:], sep='\n')
 
