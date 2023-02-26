@@ -30,5 +30,6 @@ for i in range(1, N + 1):
     E[i].sort()  # 정점 번호를 오름차순으로 방문하도록
 
 bfs(E, R)
+
 for node in visited[1::]:
     print(node)
