@@ -54,3 +54,5 @@
 - [B_1931_회의실 배정하기](https://www.acmicpc.net/problem/1931) [B_25682_체스판](https://www.acmicpc.net/problem/25682) [B_1874_스택 수열](https://www.acmicpc.net/problem/1874)
 > day 11 큐, 트리, DFS, BFS
 - [B_18258_큐2](https://www.acmicpc.net/problem/18258) [B_11725_트리의 부모 찾기](https://www.acmicpc.net/problem/11725) [B_24479_깊이 우선 탐색 1](https://www.acmicpc.net/problem/24479) [B_24444_너비 우선 탐색 1](https://www.acmicpc.net/problem/24444)
+> day 12 SWEA IM 따라잡기
+- [SWEA_1220_자석](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14hwZqABsCFAYD) [SWEA_1258_행렬찾기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18LoAqItcCFAZN) [SWEA_1267_작업순서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18TrIqIwUCFAZN)
