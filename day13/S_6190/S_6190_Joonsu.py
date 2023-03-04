@@ -1,7 +1,3 @@
-import sys
-sys.stdin = open('input.txt', 'r')
-
-
 def increasing(x):
     if x[-1] == 0:
         return -1
