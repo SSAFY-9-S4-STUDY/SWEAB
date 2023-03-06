@@ -58,3 +58,5 @@
 - [SWEA_1220_자석](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV14hwZqABsCFAYD) [SWEA_1258_행렬찾기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18LoAqItcCFAZN) [SWEA_1267_작업순서](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV18TrIqIwUCFAZN)
 > day 13 SWEA IM 따라잡기
 - 1.[SWEA_1959_두개의 숫자열](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpoFaAS4DFAUq) 2.[SWEA_1970_쉬운 거스름돈](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PsIl6AXIDFAUq) 3.[SWEA_4466_최대 성적표 만들기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWOUfCJ6qVMDFAWg) 4.[SWEA_5431_과제 체크하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl3rWKDBYDFAXm) 5.[SWEA_6190_단조 증가하는 수](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWcPjEuKAFgDFAU4)
+> day 14 트리, dfs, bfs
+- 1.[B_12100_2048(easy)](https://www.acmicpc.net/problem/12100) 2.[B_5639_이진 검색 트리](https://www.acmicpc.net/problem/5639) 3.[B_2667_단지 번호 붙이기](https://www.acmicpc.net/problem/2667)
