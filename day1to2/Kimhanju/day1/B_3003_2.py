@@ -1,1 +1,0 @@
-print(" ".join([str(x-int(y)) for x, y in zip([1,1,2,2,2,8],input().split(" "))]))
