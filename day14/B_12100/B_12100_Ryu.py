@@ -10,7 +10,7 @@ temp = [[0 for i in range(size)] for j in range(size)]
 # 사이에 그것들을 어떻게 저장할 것인가는 없는 것이다.
 
 
-def move(a): # 상하좌우 + 최대값 뽑아내야한다.
+def move(a): # 상하좌우 + 최대값 뽑아내야한다. 응 뽑으면 
     global temp, size
 
     rlt = 0
