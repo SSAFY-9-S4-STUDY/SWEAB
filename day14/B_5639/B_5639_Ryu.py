@@ -1,5 +1,3 @@
-# 문제 추천하신 분을 찾습니다~ 
-
 import sys
 from collections import deque
 input = sys.stdin.readline
