@@ -26,6 +26,5 @@ for i in range(num):
             rlt.append(temp)
         visited[i][j] = 1
 
-
 rlt.sort()
 print(len(rlt), *rlt)
