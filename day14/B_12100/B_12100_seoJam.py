@@ -1,6 +1,6 @@
-from copy import deepcopy
 # deepcopy() : 단순복제를 하는 copy()와 달리 별개의 복제된 버전 생성 ==> 원본에 서로 영향 X
 # copy() : 1차원 리스트에서는 원본과 서로 영향을 미치지 않지만, 2차원 부터는 영향 O (복사본의 요소를 바꾸면 원본 요소도 바뀜)
+from copy import deepcopy
 
 # 입력된 방향의 끝에서 부터 숫자를 채워줄 예정
 def shake(arr, n):
