@@ -1,11 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="df017959-7716-42b4-9ab6-f4d774ca5561" name="Default Changelist" comment="" />
+    <list default="true" id="df017959-7716-42b4-9ab6-f4d774ca5561" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/day14/B_12100/B_12100_JIHYUN.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day14/B_2667/B_2667_jihyun.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/day14/B_5639/B_5639_jihyun.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="2N4wjIBCJdGjagFQwSbhXVL1TVT" />
   <component name="ProjectViewState">
@@ -16,6 +23,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="df017959-7716-42b4-9ab6-f4d774ca5561" name="Default Changelist" comment="" />
