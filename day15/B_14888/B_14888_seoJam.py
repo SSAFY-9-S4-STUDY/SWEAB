@@ -1,39 +1,46 @@
-import sys
-input = sys.stdin.readline
+# 저는 순열로 풀어서 실행 시간이 2788ms 나오는데..
+# 구글에 DFS 코드 있어서 보니까 112ms 뜨네요. 심정이 매우 처량합니다...
 
-def who_is_my_team(idx, N):  # DFS()
-    global cnt
-    global answer
+from itertools import permutations
 
-    # [2] 팀이 정해지면 Sij, Sji 합 구하기
-    if cnt == N//2:
-        teamTrue, teamFalse = 0, 0
-        for i in range(N):
-            for j in range(N):
-                # 둘다 True team이야?
-                if visited[i] and visited[j]:
-                    teamTrue += S[i][j]
-                # 둘다 False team이야?
-                elif not visited[i] and not visited[j]:
-                    teamFalse += S[i][j]
+def calculator(operator, num1, num2):  # 계산 함수
+    if operator == "+":
+        return num1 + num2
+    elif operator == "-":
+        return num1 - num2
+    elif operator == "*":
+        return num1 * num2
+    else:
+        if num1 < 0:
+            return -(abs(num1) // num2)
+        else:
+            return num1 // num2
 
-        # [3] 팀별 능력치 차이 구하고 최솟값 출력
-        answer = min(answer, abs(teamTrue - teamFalse))
-        return
+n = int(input())
+nums = list(map(int, input().split()))  # 숫자열
+cnt = list(map(int, input().split()))   # 연산자별 개수
+cal = ["+", "-", "*", "/"]
 
-    # [1] True/False 팀으로 나눠주기
-    for i in range(idx, N):
-        if visited[i] == False:
-            visited[i] = True
-            cnt += 1
-            who_is_my_team(i+1, N)
-            visited[i] = False
-            cnt -= 1
+# operators: n-1개의 연산자 리스트
+operators = []
+temp = ''
+for i in range(4):
+    if cal[i] * cnt[i]:
+        temp += cal[i] * cnt[i]
+operators = list(temp)
 
+# operators로 순열 만들기
+permute = list(permutations(operators, n-1))
 
-N = int(input())
-S = [list(map(int, input().split())) for _ in range(N)]
-visited = [False] * N
-cnt, answer = 0, 100
-who_is_my_team(0, N)
-print(answer)
+# 계산하기
+max_, min_ = -1e9, 1e9
+res = nums[0]
+for i in range(len(permute)):
+    for j in range(n-1):
+        res = calculator(permute[i][j], res, nums[j+1])
+    # 계산 끝나면?
+    max_ = max(max_, res)
+    min_ = min(min_, res)
+    res = nums[0]
+
+print(max_, min_, sep='\n')
