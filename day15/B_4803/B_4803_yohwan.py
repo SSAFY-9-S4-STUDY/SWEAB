@@ -1,6 +1,9 @@
 import sys
 sys.stdin = open("sample.txt")
 
+# 아직 미완성 임니다...
+# 거의 다 푼 것 같은데 자꾸 에러떠요
+# 빨리 고쳐볼게요 ㅠㅠ
 
 def tree(start):
     queue = [start]
@@ -38,12 +41,7 @@ for _ in range(m):
             else:
                 continue
 
-if cnt == 0:
-    print("Case 3: No trees.")
-elif cnt == 1:
-    print("Case 2: There is one tree.")
-elif cnt > 1:
-    print(f'Case 1: A forest of {cnt} trees.')
+
 
 
 
