@@ -63,4 +63,4 @@
 > day 15
 - 1.[연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 2.[스타트와 링크](https://www.acmicpc.net/problem/14889) 3.[인구 이동](https://www.acmicpc.net/problem/16234) 4.[트리](https://www.acmicpc.net/problem/4803)
 > day 16
-- 1.[B_1260_DFS와 BFS](https://www.acmicpc.net/problem/1260) 2.[B_20056_마법사 상어와 파이어볼]https://www.acmicpc.net/problem/20056 3.[B_12865_평범한 배낭](https://www.acmicpc.net/problem/12865)
+- 1.[B_1260_DFS와 BFS](https://www.acmicpc.net/problem/1260) 2.[B_20056_마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056) 3.[B_12865_평범한 배낭](https://www.acmicpc.net/problem/12865)
