@@ -10,7 +10,7 @@ if __name__ == '__main__':
         weight, value = map(int, input().split())
         bag.append((weight, value))
 
-    # '가치' 순으로 내림차순 정렬
+    # 물품 '가치' 순으로 내림차순 정렬
     bag.sort(key=lambda x: x[1], reverse=True)
 
     for i in range(n - 1):
@@ -19,7 +19,8 @@ if __name__ == '__main__':
         total_v = bag[i][1]
 
         for j in range(i+1, n):
-            if cnt == n or total_w + bag[j][0] > k: continue    # 무게 초과면 넘어가
+            if cnt == n: break                      # 물건 개수 초과면 끝내
+            elif total_w + bag[j][0] > k: continue  # 무게 초과면 넘어가
             else:                                   # 무게 이하면 넣어
                 cnt += 1
                 total_w += bag[j][0]
