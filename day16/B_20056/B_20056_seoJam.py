@@ -28,7 +28,6 @@ if __name__ == '__main__':
             fball[i][0] += dir[fball[i][3]][0] * fball[i][4]  # 행 이동
             fball[i][1] += dir[fball[i][3]][1] * fball[i][4]  # 열 이동
 
-            if
 
             arr[fball[i][0]][fball[i][1]] += fball[i][3]      # 격자에 무게 저장
 

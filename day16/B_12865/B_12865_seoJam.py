@@ -1,6 +1,3 @@
-import sys
-sys.stdin = open("input.txt")
-
 # 구글링 100% [출처: https://claude-u.tistory.com/208]
 # 쉬운줄 알았다가 뜨겁게 대였습니다.
 # 그래도 'fucking 냅색 알고리즘'에 대해서 공부할 수 있어서 행복했습니다.
