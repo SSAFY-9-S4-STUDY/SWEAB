@@ -60,7 +60,7 @@
 - 1.[SWEA_1959_두개의 숫자열](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PpoFaAS4DFAUq) 2.[SWEA_1970_쉬운 거스름돈](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AV5PsIl6AXIDFAUq) 3.[SWEA_4466_최대 성적표 만들기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWOUfCJ6qVMDFAWg) 4.[SWEA_5431_과제 체크하기](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWVl3rWKDBYDFAXm) 5.[SWEA_6190_단조 증가하는 수](https://swexpertacademy.com/main/code/problem/problemDetail.do?contestProbId=AWcPjEuKAFgDFAU4)
 > day 14 트리, dfs, bfs
 - 1.[B_12100_2048(easy)](https://www.acmicpc.net/problem/12100) 2.[B_5639_이진 검색 트리](https://www.acmicpc.net/problem/5639) 3.[B_2667_단지 번호 붙이기](https://www.acmicpc.net/problem/2667)
-> day 15
+> day 15 구현, 그래프, 트리, DFS, 백트래킹
 - 1.[연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 2.[스타트와 링크](https://www.acmicpc.net/problem/14889) 3.[인구 이동](https://www.acmicpc.net/problem/16234) 4.[트리](https://www.acmicpc.net/problem/4803)
 > day 16 DFS,BFS, 구현, DP
 - 1.[B_1260_DFS와 BFS](https://www.acmicpc.net/problem/1260) 2.[B_20056_마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056) 3.[B_12865_평범한 배낭](https://www.acmicpc.net/problem/12865)
