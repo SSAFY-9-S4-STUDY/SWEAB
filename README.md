@@ -62,5 +62,9 @@
 - 1.[B_12100_2048(easy)](https://www.acmicpc.net/problem/12100) 2.[B_5639_이진 검색 트리](https://www.acmicpc.net/problem/5639) 3.[B_2667_단지 번호 붙이기](https://www.acmicpc.net/problem/2667)
 > day 15
 - 1.[연산자 끼워넣기](https://www.acmicpc.net/problem/14888) 2.[스타트와 링크](https://www.acmicpc.net/problem/14889) 3.[인구 이동](https://www.acmicpc.net/problem/16234) 4.[트리](https://www.acmicpc.net/problem/4803)
-> day 16
+> day 16 DFS,BFS, 구현, DP
 - 1.[B_1260_DFS와 BFS](https://www.acmicpc.net/problem/1260) 2.[B_20056_마법사 상어와 파이어볼](https://www.acmicpc.net/problem/20056) 3.[B_12865_평범한 배낭](https://www.acmicpc.net/problem/12865)
+> day 17 분할정복, BFS (, 그리디)
+- 1,2.[SWEA_분할정복_병합,퀵](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDYSqAAbw5UW6&subjectId=AWUYFsQq11kDFAVT)  로그인하고 다시 들어가면 제대로 들어가집니다.
+- 3.[B_13305_주유소](https://www.acmicpc.net/problem/13305) 4.[BFS_7576_토마토](https://www.acmicpc.net/problem/7576)
+- Extra.[B_1992_쿼드트리](https://www.acmicpc.net/problem/1992)
