@@ -68,3 +68,5 @@
 - 1,2.[SWEA_분할정복_병합,퀵](https://swexpertacademy.com/main/learn/course/subjectDetail.do?courseId=AVuPDYSqAAbw5UW6&subjectId=AWUYFsQq11kDFAVT)  로그인하고 다시 들어가면 제대로 들어가집니다.
 - 3.[B_13305_주유소](https://www.acmicpc.net/problem/13305) 4.[B_7576_토마토](https://www.acmicpc.net/problem/7576)
 - Extra.[B_1992_쿼드트리](https://www.acmicpc.net/problem/1992)
+> day 18 그리디, 분할정복
+- 1.[B_1541_잃어버린 괄호](https://www.acmicpc.net/problem/1541) 2.[B_2839_설탕배달](https://www.acmicpc.net/problem/2839) 3.[B_1629_곱셈](https://www.acmicpc.net/problem/1629)
