@@ -1,6 +1,6 @@
 # Googling 100%
 # 분할정복을 이용한 거듭제곱
-
+# 합동식
 def DaC(a, b, c):
     if b == 1:          # [0] Base
          return a % c
