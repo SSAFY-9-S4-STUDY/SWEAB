@@ -1,4 +1,4 @@
-# Day17 Code Review
+# Day18 Code Review
 
 ## 김한주 > 윤지현
 
