@@ -1,0 +1,44 @@
+def preorder(arr):
+    print(arr[0], end='')
+    for i in range(n):
+        if tree[i][0] == arr[1]:
+            preorder(tree[i])
+            break
+    for j in range(n):
+        if tree[j][0] == arr[2]:
+            preorder(tree[j])
+            break
+
+def inorder(arr):
+    for i in range(n):
+        if tree[i][0] == arr[1]:
+            inorder(tree[i])
+            break
+    print(arr[0], end='')
+    for j in range(n):
+        if tree[j][0] == arr[2]:
+            inorder(tree[j])
+            break
+
+def postorder(arr):
+    for i in range(n):
+        if tree[i][0] == arr[1]:
+            postorder(tree[i])
+            break
+    for j in range(n):
+        if tree[j][0] == arr[2]:
+            postorder(tree[j])
+            break
+    print(arr[0], end='')
+
+
+n = int(input())
+tree = []
+for _ in range(n):
+    tree.append(input().split())
+
+preorder(tree[0])
+print()
+inorder(tree[0])
+print()
+postorder(tree[0])
