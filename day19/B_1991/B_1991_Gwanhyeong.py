@@ -1,3 +1,4 @@
+# 전위 순회
 def preorder(node):
     if node == 0:
         return
@@ -5,7 +6,7 @@ def preorder(node):
     preorder(tree[node][0])
     preorder(tree[node][1])
 
-
+# 중위 순회
 def inorder(node):
     if node == 0:
         return
@@ -13,7 +14,7 @@ def inorder(node):
     print(ALPHABET[node], end='')
     inorder(tree[node][1])
 
-
+# 후위 순회
 def postorder(node):
     if node == 0:
         return
