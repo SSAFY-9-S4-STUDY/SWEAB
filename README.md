@@ -74,5 +74,5 @@
 - 1.[B_17086_아기상어2](https://www.acmicpc.net/problem/17086) 2.[B_1780_종이의 개수](https://www.acmicpc.net/problem/1780) 3.[B_1991_트리 순회](https://www.acmicpc.net/problem/1991)
 > day 20
 - 1.[P_등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
-> day 21 / 22
+> day 21
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
