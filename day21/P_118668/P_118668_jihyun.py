@@ -14,8 +14,6 @@ def solution(alp, cop, problems):
     # 방법2 - 그냥 공부해서 알고력 코딩력을 늘린다고 가정했을 때의 비용을 미리 dp에 반영/ 2중 for문의 if문 필요 없음
     initial = -alp - cop
     costs = [list(range(tmp, max_cop + tmp + 1)) for tmp in range(initial, initial + max_alp + 1)]
-    for idx, cst in enumerate(costs):
-        print(idx, ':', cst)
 
     for i in range(alp, max_alp + 1):
         for j in range(cop, max_cop + 1):
@@ -26,8 +24,6 @@ def solution(alp, cop, problems):
             # if j < max_cop:
             #     costs[i][j+1] = min(costs[i][j] + 1, costs[i][j+1])
 
-            # for idx, cst in enumerate(costs):
-            #     print(idx, ':', cst)
 
             for prob in problems:
                 alp_req, cop_req, alp_rwd, cop_rwd, cost = prob
@@ -38,11 +34,3 @@ def solution(alp, cop, problems):
     answer = costs[max_alp][max_cop]
     return answer
 
-
-# case1
-# alp, cop = 10, 10
-# problems = [[10, 15, 2, 1, 2], [20, 20, 3, 3, 4]]
-# case2
-alp, cop = 0, 0
-problems = [[0, 0, 2, 1, 2], [4, 5, 3, 1, 2], [4, 11, 4, 0, 2], [10, 4, 0, 4, 2]]
-print(solution(alp, cop, problems))
