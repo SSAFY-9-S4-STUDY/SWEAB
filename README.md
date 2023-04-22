@@ -76,7 +76,7 @@
 - 1.[B_1541_잃어버린 괄호](https://www.acmicpc.net/problem/1541) 2.[B_2839_설탕배달](https://www.acmicpc.net/problem/2839) 3.[B_1629_곱셈](https://www.acmicpc.net/problem/1629)
 > day 19 백트래킹, 분할정복, 트리
 - 1.[B_17086_아기상어2](https://www.acmicpc.net/problem/17086) 2.[B_1780_종이의 개수](https://www.acmicpc.net/problem/1780) 3.[B_1991_트리 순회](https://www.acmicpc.net/problem/1991)
-> day 20
+> day 20 최소신장트리
 - 1.[P_등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
-> day 21
+> day 21 동적계획법, 누적합
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
