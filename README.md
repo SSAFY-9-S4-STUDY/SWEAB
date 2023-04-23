@@ -12,13 +12,17 @@
 7. 만약 문제를 "못" 푸셨다면 푸신 부분까지라도 올려야 함.<br>
   (해당 부분과 나중에 푼 부분을 비교하시면서 self-feedback하시는것도 좋을 것 같아요!)
 
-## 스터디원 명단 및 백준 아이디 (임시)
+## 스터디원 명단 및 백준 아이디
 |김관형|김한주|서재현|이장원|임준수|윤지현|문요환|   
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |kghyeong1592|rlagkswn37|fv00245|aster0|아이디|gus991121|ansdy9600|  
 - 개인 정보(출신학교) 등이 기입되어있던 경우 설정에서 바꾸시고 적어주셔도 됩니다.
 
-  
+## Betrayers
+|박원서|김주연|류동훈|
+|:---:|:---:|:---:|
+|전 스터디장|전 태양|전 태양|
+
 ## 관련 URL LINK
 #### [백준](https://www.acmicpc.net/)
 #### [SWEA](https://swexpertacademy.com/main/main.do)
@@ -72,7 +76,7 @@
 - 1.[B_1541_잃어버린 괄호](https://www.acmicpc.net/problem/1541) 2.[B_2839_설탕배달](https://www.acmicpc.net/problem/2839) 3.[B_1629_곱셈](https://www.acmicpc.net/problem/1629)
 > day 19 백트래킹, 분할정복, 트리
 - 1.[B_17086_아기상어2](https://www.acmicpc.net/problem/17086) 2.[B_1780_종이의 개수](https://www.acmicpc.net/problem/1780) 3.[B_1991_트리 순회](https://www.acmicpc.net/problem/1991)
-> day 20
+> day 20 최소신장트리
 - 1.[P_등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
-> day 21
+> day 21 동적계획법, 누적합
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
