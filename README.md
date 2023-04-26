@@ -80,5 +80,5 @@
 - 1.[P_등산코스 정하기](https://school.programmers.co.kr/learn/courses/30/lessons/118669)
 > day 21 동적계획법, 누적합
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
-> day 22 이중연결리스트, 동적계획법
+> day 22 Linked List, 동적계획법
 - 1.[P_81303_표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_42898_등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)
