@@ -1,56 +1,53 @@
-# CS 공부하면서 마주쳤던 Linked List를 여기서 만났네요
-
+# linked_list 문제입니당.
 def solution(n, k, cmds):
-    arr = ['O'] * n
-    delStack = []  # 삭제칸 저장용 stack
     linked_list = {i: [i-1, i+1] for i in range(n)}
-    linked_list[0][0] = linked_list[n-1][1] = None
+    arr = ['O'] * n
+    del_stack = []  # 삭제칸 저장용 stack
 
-    for cmd in cmds:
-        # [1] C: 현재 행 삭제
-        if cmd == "C":
+    for _ in cmds:
+        cmd = _.split()
+
+        # [1] D: 아래 이동
+        if cmd[0] == "D":
+            for _ in range(int(cmd[1])):
+                k = linked_list[k][1]
+
+        # [2] U: 위 이동
+        elif cmd[0] == "U":
+            for _ in range(int(cmd[1])):
+                k = linked_list[k][0]
+
+        # [3] C: 현재 행 삭제
+        elif cmd[0] == "C":
             before, after = linked_list[k]
             arr[k] = 'X'
-            delStack.append((before, k, after))
-
-            if k == n-1: k = before  # 막행이면 앞으로~
-            else: k = after          # 아니면 뒤로~
-
-            if before == None:
-                linked_list[after][0] = None
-            elif after == None:
-                linked_list[before][1] = None
+            del_stack.append((before, k, after))
+            # 막행이면 앞으로, 아니면 뒤로 이동
+            if after == n:
+                k = before
             else:
-                linked_list[after][0] = before  # 끊어내기
-                linked_list[before][1] = after  # 끊어내기
+                k = after
+            # 앞 뒤 노드 연결해주기
+            if before == -1:
+                linked_list[after][0] = -1
+            elif after == n:
+                linked_list[before][1] = n
+            else:
+                linked_list[after][0] = before
+                linked_list[before][1] = after
 
-        # [2] Z: 삭제 행 복구
-        elif cmd == "Z":
-            before, temp_k, after = delStack.pop()
+        # [4] Z: 삭제 행 복구
+        elif cmd[0] == "Z":
+            before, temp_k, after = del_stack.pop()
             arr[temp_k] = 'O'
-
-            if before == None:
-                linked_list[after][0] = None
-            elif after == None:
-                linked_list[before][1] = None
+            # 다시 연결
+            if before == -1:
+                linked_list[after][0] = temp_k
+            elif after == n:
+                linked_list[before][1] = temp_k
             else:
-                linked_list[after][0] = temp_k   # 다시 연결
-                linked_list[before][1] = temp_k  # 다시 연결
-
-        else:
-            cmd, x = list(cmd.split())
-            # [3] D: 아래 이동
-            if cmd[0] == "D":
-                for _ in range(int(x)):
-                    k = linked_list[k][1]
-            # [4] U: 위 이동
-            elif cmd[0] == "U":
-                for _ in range(int(x)):
-                    k = linked_list[k][0]
+                linked_list[after][0] = temp_k
+                linked_list[before][1] = temp_k
 
     answer = ''.join(arr)
     return answer
-
-
-print(solution(8, 2, ["D 2","C","U 3","C","D 4","C","U 2","Z","Z"]))
-print(solution(8, 2, ["D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"]))
