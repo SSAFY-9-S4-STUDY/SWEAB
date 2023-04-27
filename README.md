@@ -18,10 +18,12 @@
 |kghyeong1592|rlagkswn37|fv00245|aster0|아이디|gus991121|ansdy9600|  
 - 개인 정보(출신학교) 등이 기입되어있던 경우 설정에서 바꾸시고 적어주셔도 됩니다.
 
-## Contributors
-|박원서|김주연|류동훈|
-|:---:|:---:|:---:|
-|전 스터디장|전 태양|전 태양|
+<center>🙏도움을 주신 분들🙏</center>
+<br>
+<a href="https://github.com/SSAFY-9-S4-STUDY/SWEAB/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=SSAFY-9-S4-STUDY/SWEAB" />
+</a>
+
 
 ## 관련 URL LINK
 #### [백준](https://www.acmicpc.net/)
