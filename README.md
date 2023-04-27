@@ -18,7 +18,7 @@
 |kghyeong1592|rlagkswn37|fv00245|aster0|아이디|gus991121|ansdy9600|  
 - 개인 정보(출신학교) 등이 기입되어있던 경우 설정에서 바꾸시고 적어주셔도 됩니다.
 
-## Betrayers
+## Contributors
 |박원서|김주연|류동훈|
 |:---:|:---:|:---:|
 |전 스터디장|전 태양|전 태양|
@@ -26,6 +26,7 @@
 ## 관련 URL LINK
 #### [백준](https://www.acmicpc.net/)
 #### [SWEA](https://swexpertacademy.com/main/main.do)
+#### [프로그래머스](https://programmers.co.kr/)
 #### [서울_4반_notion](https://www.notion.so/hg-edu/4-08695be2b177463ea947c74f81ee8f49)
 #### [스터디_notion](https://www.notion.so/34a5043cb73440378a1015001f705846?v=49e3512734994ce6b2c41f01a9706f9a)
 #### [SSAFY_edu](https://edu.ssafy.com/)
@@ -81,4 +82,4 @@
 > day 21 동적계획법, 누적합
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
 > day 22 Linked List, 동적계획법
-- 1.[P_81303_표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_42898_등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)
+- 1.[P_81303_표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) 2.[P_42898_등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)
