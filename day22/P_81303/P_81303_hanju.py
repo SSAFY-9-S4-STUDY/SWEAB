@@ -1,57 +1,45 @@
 from collections import deque
 
-def solution(n, k, cmds):
-    # 현재 남아있는 행 개수와 행 번호
-    remain, row = n-1, k
-    # 배열에서의 위치와 이동할 거리 표시
-    loc, move = 1, k
-    # 커맨드에 따른 이동 방향을 나타내기 위한 딕셔너리
-    direction = {'D': 1, 'U': -1}
-    # 현재 상태를 표현할 배열들
-    group = [0, n] + ['O']*(n-2) + [1, 0]
-    deleted = deque()
-    # 커맨드에 따라 연산 진행
-    for cmd in cmds:
+def solution(n, k, cmd):
+    # 이동 시 가게 될 왼쪽, 오른쪽 인덱스 번호 (-1 : 여기가 끝 행임을 의미)
+    # deleted : 삭제된 행 정보
+    linked = [[-1,1]] + [[i-1, i+1] for i in range(1, n-1)] + [[n-2,-1]]
+    deleted = deque([])
+    # 커맨드를 따라 표편집 진행
+    for c in cmd:
         # 삭제 커맨드
-        if cmd == 'C':
-            # 이동 방향 결정
-            dir = 1 if move > 0 else -1
-            # 이동
-            while move:
-                # 현재 위치가 지워져있으면 위치 한 칸 이동
-                if not group[loc+dir]:
-                    loc += dir
-                    continue
-                # 현재 위치가 그룹 한 중간일 경우
-                if group[loc] and not group[loc]
-
-
-            # row와 remain 갱신
-            # 끝 행을 지웠을 경우 행 위치 한 칸 올려줌
-            remain -= 1
-            if row > remain: row -= 1
+        if c == 'C':
+            # deleted에 행 정보 추가하고 삭제
+            left, right = linked[k]
+            deleted.append((left, right, k))
+            linked[k] = 0
+            # linked 수정
+            if left > -1: linked[left][1] = right
+            if right > -1: linked[right][0] = left
+            # k 수정
+            k = right if right > 0 else left
+            move = 0
         # 되돌리기 커맨드
-        elif cmd == 'Z':
-            comeback = deque.pop()
-            # 되돌린 요소가 속한 그룹의 시작 인덱스와 끝 인덱스 갱신
-            s = group[comeback-1] if group[comeback-1] else comeback
-            e = group[comeback+1] if group[comeback+1] else comeback
-            group[comeback] = 'O'
-            group[e], group[s] = s, e
-            # row와 remain 갱신
-            # 되돌린 행이 배열에서의 현재 위치보다 작으면 row + 1
-            remain += 1
-            if comeback < loc: row += 1
+        elif c == 'Z':
+            left, right, row = deleted.pop()
+            # linked에 삭제된 행 추가
+            linked[row] = [left, right]
+            # 좌우 연결 정보 수정=
+            if left > -1: linked[left][1] = row
+            if right > -1: linked[right][0] = row
         # 이동 커맨드
         else:
-            updown, distance = cmd.split(" ")
-            distance = int(distance) * direction[updown]
-            row += distance
-            move += distance
+            updown, move = c.split()
+            move = int(move)
+            # d: direction => 이동시 linked에서 하위 리스트에서 선택하게될 인덱스
+            d = 0 if updown == 'U' else 1 
+            # 이동
+            for _ in range(abs(move)):
+                k = linked[k][d]
 
-
-    return group
+    # 반환값 조건에 맞게 변형
+    return ''.join(map(lambda x: 'O' if x else 'X', linked))
 
 n, k = 8, 2
-cmds = ["D 2","C","U 3","C","D 4","C","U 2","Z","Z","U 1","C"]
-print(solution(n, k, cmds))
+cmd = ["D 2", "C", "U 3", "C", "D 4", "C", "U 2", "Z", "Z", "U 1", "C"]
+print(solution(n, k, cmd))
