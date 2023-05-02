@@ -88,3 +88,5 @@
 - 1.[P_118668_코딩 테스트 공부](https://school.programmers.co.kr/learn/courses/30/lessons/118668) 2.[P_92344_파괴되지 않은 건물](https://school.programmers.co.kr/learn/courses/30/lessons/92344)
 > day 22 Linked List, 동적계획법
 - 1.[P_81303_표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) 2.[P_42898_등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)
+> day 23 아이템줍기, 정수삼각형(DP)
+- 1.[P_87694_아이템줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694) 2.[P_43105_정수삼각형(DP)](https://school.programmers.co.kr/learn/courses/30/lessons/43105)
