@@ -90,5 +90,5 @@
 - 1.[P_81303_표 편집](https://school.programmers.co.kr/learn/courses/30/lessons/81303) 2.[P_42898_등굣길](https://school.programmers.co.kr/learn/courses/30/lessons/42898)
 > day 23 BFS, 동적계획법
 - 1.[P_87694_아이템줍기](https://school.programmers.co.kr/learn/courses/30/lessons/87694) 2.[P_43105_정수삼각형(DP)](https://school.programmers.co.kr/learn/courses/30/lessons/43105)  
-> day 24 DFS, 
+> day 24 
 - 1.[P 92343 양과 늑대](https://school.programmers.co.kr/learn/courses/30/lessons/92343) 2.[P_150367 표현 가능한 이진트리](https://school.programmers.co.kr/learn/courses/30/lessons/150367)
