@@ -21,4 +21,3 @@ def solution(info, edges):
     dfs(1, 0)
 
     return answer
-
