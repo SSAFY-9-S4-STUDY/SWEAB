@@ -3,7 +3,7 @@
 ### **git status / git pull 를 생활화 합시다!**  
 <br>
 
-## 규칙
+## ⚔규칙
 1. 스터디와 관계없는 내용은 올리지 않는다.
 2. 다른 사람의 코드는 허락없이 수정하지 않는다.
 3. `B`는 백준, `S`는 SW Expert Academy , `P`는 프로그래머스
@@ -15,7 +15,7 @@
 <br><br>
 
 
-## 現) 스터디원 명단 및 백준 아이디
+## 🙋‍♂️現) 스터디원 명단 및 백준 아이디
 |김관형|김한주|서재현|이장원|임준수|윤지현|문요환|   
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 |kghyeong1592|rlagkswn37|fv00245|aster0|아이디|gus991121|ansdy9600|  
@@ -31,7 +31,7 @@
 <br><br>
 
 
-## 관련 URL LINK
+## 📘관련 URL LINK
 #### [백준](https://www.acmicpc.net/)
 #### [SWEA](https://swexpertacademy.com/main/main.do)
 #### [프로그래머스](https://programmers.co.kr/)
@@ -44,7 +44,7 @@
 <br><br>
 
 
-## 문제
+## 🖥문제
 > day 1
 1. [킹, 퀸, 룩, 비숍, 나이트, 폰](https://www.acmicpc.net/problem/3003) (사칙연산)
 2. [곱셈](https://www.acmicpc.net/problem/2588) (사칙연산)
