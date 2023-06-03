@@ -32,7 +32,7 @@ def solution(play_time, adv_time, logs):
         dp[i] += dp[i-1]
 
     # [3] 광고 시작시간 구하기
-    max_temp, answer = dp[adv_time], 0  #=> max_temp를 0에서 dp[adv_time]으로 바꾸니까 정답됨. 이유 모름..
+    max_temp, answer = dp[adv_time], 0
     for start in range(1, play_time):
         end = min(play_time, start+adv_time)
         temp = dp[end] - dp[start]
