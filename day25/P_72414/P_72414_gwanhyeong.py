@@ -1,4 +1,19 @@
 def solution(play_time, adv_time, logs):
+
+    def str_to_int(time):
+        h, m, s = time.split(':')
+        return int(h) * 3600 + int(m) * 60 + int(s)
+
+    def int_to_str(time):
+        h = time // 3600
+        h = '0'+str(h) if h<10 else str(h)
+        time = time % 3600
+        m = time // 60
+        m = '0'+str(m) if m<10 else str(m)
+        time = time % 60
+        s = '0' + str(time) if time < 10 else str(time)
+        return h + ':' + m + ':' + s
+    
     play_time = str_to_int(play_time)
     adv_time = str_to_int(adv_time)
     N = play_time
@@ -31,16 +46,3 @@ def solution(play_time, adv_time, logs):
     return int_to_str(max_time)
 
 
-def str_to_int(time):
-    h, m, s = time.split(':')
-    return int(h) * 3600 + int(m) * 60 + int(s)
-
-def int_to_str(time):
-    h = time // 3600
-    h = '0'+str(h) if h<10 else str(h)
-    time = time % 3600
-    m = time // 60
-    m = '0'+str(m) if m<10 else str(m)
-    time = time % 60
-    s = '0' + str(time) if time < 10 else str(time)
-    return h + ':' + m + ':' + s
