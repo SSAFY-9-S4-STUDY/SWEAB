@@ -22,11 +22,11 @@ def solution(play_time, adv_time, logs):
 
     # [2] log별 시간 정보 저장(DP, 구간합)
     dp = [0 for _ in range(play_time + 1)]
-    for log in logs:  # 시작/종료점 찍기
+    for log in logs:                   # 시작/종료점 찍기
         log_s, log_e = map(time_to_sec, log.split('-'))
         dp[log_s] += 1
         dp[log_e] -= 1
-
+        
     for i in range(1, play_time + 1):  # 구간값 저장
         dp[i] += dp[i - 1]
 
