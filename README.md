@@ -172,3 +172,7 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 > day 25
 1. [합승 택시 요금](https://school.programmers.co.kr/learn/courses/30/lessons/72413) (그래프)
 2. [광고 삽입](https://school.programmers.co.kr/learn/courses/30/lessons/72414) (DP)
+
+> day 26
+1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
+2. [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
