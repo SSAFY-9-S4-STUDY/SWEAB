@@ -174,5 +174,5 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 2. [광고 삽입](https://school.programmers.co.kr/learn/courses/30/lessons/72414) (DP)
 
 > day 26
-1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365)
-2. [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995)
+1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365) (DFS,BFS)
+2. [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995) (브루트포스)
