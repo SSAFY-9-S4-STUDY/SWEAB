@@ -1,18 +1,23 @@
-def dfs(x, y, res, cnt):
+import sys
+sys.setrecursionlimit(10**8)
+
+# x,y: 현재 좌표 / temp: 문자열 / cnt: 남은 이동횟수
+def dfs(x, y, temp, cnt):
     global answer
-    dir = [(-1, 0, 'u'), (1, 0, 'd'), (0, -1, 'l'), (0, 1, 'r')]
-    # [0] 백트래킹
+    dirs = [(1, 0, 'd'), (0, -1, 'l'), (0, 1, 'r'), (-1, 0, 'u')]
+
+    # [1] 백트래킹: 남은 이동횟수 보다 이동거리가 더 크다면?
     if cnt < abs(x-R) + abs(y-C):
         return
-    # [1] 도착하면?
-    if cnt == 0:
+    # [2] 종료조건: 이동이 끝나면?
+    elif cnt == 0:
         if (x, y) == (R, C):
-            answer = res
+            answer = temp
         return
-    # [2] 아직 도착 안했다면?
-    for dx, dy, key in dir:
-        if 0 < x+dx <= N and 0 < y+dy <= M and res+key < answer:
-            dfs(x+dx, y+dy, res+key, cnt-1)
+    # [3] 아직 이동할 수 있다면?
+    for dx, dy, dir in dirs:
+        if 0 < x+dx <= N and 0 < y+dy <= M and temp+dir < answer:
+            dfs(x+dx, y+dy, temp+dir, cnt-1)
 
 
 def solution(n, m, x, y, r, c, k):
