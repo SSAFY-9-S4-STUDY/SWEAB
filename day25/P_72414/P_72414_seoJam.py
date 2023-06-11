@@ -3,6 +3,7 @@ def time_to_sec(time):
     h, m, s = map(int, time.split(':'))
     return h * 3600 + m * 60 + s
 
+
 # 초 단위 => 시간 형식
 def sec_to_time(sec):
     h = sec // 3600
@@ -21,14 +22,14 @@ def solution(play_time, adv_time, logs):
 
     # [2] log별 시간 정보 저장(DP, 구간합)
     dp = [0 for _ in range(play_time + 1)]
-    for log in logs:                 # 시작/종료점 찍기
+    for log in logs:                   # 시작/종료점 찍기
         log_s, log_e = map(time_to_sec, log.split('-'))
         dp[log_s] += 1
         dp[log_e] -= 1
         
     for i in range(1, play_time + 1):  # 구간값 저장
         dp[i] += dp[i - 1]
-        
+
     for i in range(1, play_time + 1):  # 누적합 저장
         dp[i] += dp[i - 1]
 
@@ -40,6 +41,6 @@ def solution(play_time, adv_time, logs):
         if max_temp < temp:
             max_temp = temp
             answer = start + 1
-            
+
     # [4] 시간 형식으로 반환
     return sec_to_time(answer)
