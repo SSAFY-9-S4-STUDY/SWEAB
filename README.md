@@ -178,5 +178,5 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 2. [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995) (브루트포스)
 
 > day 27
-1. [2차원 동전 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/131703)
-2. [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884)
+1. [2차원 동전 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/131703) (비트연산)
+2. [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) (그리디)
