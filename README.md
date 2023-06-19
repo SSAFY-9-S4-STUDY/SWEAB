@@ -180,3 +180,7 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 > day 27
 1. [2차원 동전 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/131703) (비트연산)
 2. [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) (그리디)
+
+> day 28
+1. [연속펄스부분수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/161988) ()
+2. [부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266) ()
