@@ -176,3 +176,15 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 > day 26
 1. [미로 탈출 명령어](https://school.programmers.co.kr/learn/courses/30/lessons/150365) (DFS,BFS)
 2. [인사고과](https://school.programmers.co.kr/learn/courses/30/lessons/152995) (브루트포스)
+
+> day 27
+1. [2차원 동전 뒤집기](https://school.programmers.co.kr/learn/courses/30/lessons/131703) (비트연산)
+2. [단속카메라](https://school.programmers.co.kr/learn/courses/30/lessons/42884) (그리디)
+
+> day 28
+1. [연속 펄스 부분 수열의 합](https://school.programmers.co.kr/learn/courses/30/lessons/161988) (구간합)
+2. [부대복귀](https://school.programmers.co.kr/learn/courses/30/lessons/132266) (BFS)
+
+> day 29
+1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797) (${문제유형})
+2. [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) (${문제유형})
