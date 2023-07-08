@@ -188,3 +188,7 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 > day 29
 1. [숫자 타자 대회](https://school.programmers.co.kr/learn/courses/30/lessons/136797) (DP)
 2. [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) (이진탐색)
+
+> day 30
+1. [표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366)
+2. [사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)
