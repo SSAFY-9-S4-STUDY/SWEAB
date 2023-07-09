@@ -1,3 +1,5 @@
+# 구글링...ㅠㅠ
+
 table = dict()
 rep = dict()
 for i in range(51):
