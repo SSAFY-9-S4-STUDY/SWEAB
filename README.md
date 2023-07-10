@@ -190,5 +190,8 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 2. [입국심사](https://school.programmers.co.kr/learn/courses/30/lessons/43238) (이진탐색)
 
 > day 30
-1. [표 병합](https://school.programmers.co.kr/learn/courses/30/lessons/150366)
-2. [사라지는 발판](https://school.programmers.co.kr/learn/courses/30/lessons/92345)
+1. [표 병합](https://school.programmers.co.kr/learn/courses/30/lesson[s/150366)
+2. [사라지는 발판](https://school.programmers.co.kr/learn/courses/3](https://school.programmers.co.kr/learn/courses/30/lessons/72415)0/lessons/92345)
+
+> day 31
+1. [카드 짝 맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
