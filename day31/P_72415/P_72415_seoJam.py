@@ -43,7 +43,6 @@ def dfs(r, c, nr, nc, pairs, board, cnt):
     # [3] 더 맞출 짝이 없다면?
     if not pairs:
         answer = min(answer, cnt)
-        return cnt
 
     # [4] 아직 맞춰야할 짝이 있다면?
     for tr, tc in pairs:
