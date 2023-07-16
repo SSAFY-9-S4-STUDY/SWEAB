@@ -50,7 +50,7 @@ def dfs(r, c, nr, nc, pairs, board, cnt):
         dfs(pr, pc, tr, tc, pairs, board, cnt)
 
 
-# (r, c)카드의 짝 카드 반환
+# (r, c)카드의 짝카드 반환
 def get_pair(r, c, pairs, board):
     for pair in pairs:
         pr, pc = pair
@@ -58,7 +58,7 @@ def get_pair(r, c, pairs, board):
             return pr, pc
 
 
-# (r, c)에서 좌표별 최소이동횟수 반환
+# (r, c)에서 (tr, tc)까지 최소 이동횟수 반환
 def distance(r, c, tr, tc, board):
     q = deque([])
     q.append((r, c))
