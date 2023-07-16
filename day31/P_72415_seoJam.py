@@ -1,55 +1,95 @@
-# 최소 노드 경로..
-def solution(_board, r, c):
-    global board, pairs
+from copy import deepcopy
+from collections import deque
 
-    answer = 0
-    board = _board
+
+def solution(board, r, c):
+    global answer
+    answer = 1e9
     pairs = list()
 
     for i in range(4):
         for j in range(4):
-            # if (r, c) == (i, j):
-            #     continue
             if board[i][j]:
                 pairs.append((i, j))
 
-    while pairs:
-        # [1] 다음 카드로 이동
-        dis_to = bfs(r, c)
-        min_dis = 7
-        nr, nc = -1, -1
-        for i, j in pairs:
-            if min_dis > dis_to[i][j]:
-                min_dis = dis_to[i][j]
-                nr, nc = i, j
-        pairs.remove((nr, nc))
-        answer += min_dis  # 이동거리
-        print((nr, nc), answer)
-        # [2] pair 카드로 이동
-        answer += 1  # 시작 enter
-        r, c = nr, nc
-        # pair 카드 찾기
-        for pair in pairs:
-            if board[r][c] == board[pair[0]][pair[1]]:
-                nr, nc = pair
-                pairs.remove(pair)
-                break
-        answer += bfs(r, c)[nr][nc] + 1  # 이동거리 + 마침 enter
-        board[r][c] = board[nr][nc] = 0  # 짝맞춘 카드 제거
-        print((nr, nc), answer)
-        print('-----------------')
+    for nr, nc in pairs:
+        dfs(r, c, nr, nc, pairs, board, 0)
+
     return answer
 
 
-# board 안에 있는지 판단
-def is_in(r, c):
-    if r < 0 or 3 < r or c < 0 or 3 < c:
-        return False
-    return True
+def dfs(r, c, nr, nc, pairs, board, cnt):
+    global answer
+
+    # 이미 answer 보다 많이 움직였다?
+    if answer < cnt:
+        return
+
+    pairs = deepcopy(pairs)
+    board = deepcopy(board)
+
+    # [1] 첫 번째 짝카드로 이동
+    cnt += distance(r, c, nr, nc, board)
+    pairs.remove((nr, nc))
+
+    # [2] 두 번째 짝 카드로 이동
+    pr, pc = get_pair(nr, nc, pairs, board)
+    cnt += distance(nr, nc, pr, pc, board)
+    pairs.remove((pr, pc))
+
+    board[nr][nc] = board[pr][pc] = 0  # 카드 뒤집기
+    cnt += 2  # enter
+
+    # [3] 더 맞출 짝이 없다면?
+    if not pairs:
+        answer = min(answer, cnt)
+        return cnt
+
+    # [4] 아직 맞춰야할 짝이 있다면?
+    for tr, tc in pairs:
+        dfs(pr, pc, tr, tc, pairs, board, cnt)
+
+
+# (r, c)카드의 짝 카드 반환
+def get_pair(r, c, pairs, board):
+    for pair in pairs:
+        pr, pc = pair
+        if board[r][c] == board[pr][pc]:
+            return pr, pc
+
+
+# (r, c)에서 좌표별 최소이동횟수 반환
+def distance(r, c, tr, tc, board):
+    q = deque([])
+    q.append((r, c))
+    adjM = [[16 for _ in range(4)] for _ in range(4)]
+    adjM[r][c] = 0  # 시작점 표시
+    dirs = [(-1, 0), (0, -1), (1, 0), (0, 1)]
+
+    while q:
+        r, c = q.popleft()
+        for dr, dc in dirs:
+            r1, c1 = r + dr, c + dc
+            r2, c2 = ctrl_move(r, c, dr, dc, board)
+
+            if not is_in(r1, c1) or (r, c) == (r2, c2):
+                continue
+            # 최소 이동횟수 저장
+            if adjM[r1][c1] > adjM[r][c] + 1:
+                adjM[r1][c1] = adjM[r][c] + 1
+                q.append((r1, c1))
+            if adjM[r2][c2] > adjM[r][c] + 1:
+                adjM[r2][c2] = adjM[r][c] + 1
+                q.append((r2, c2))
+            # 도착시 이동횟수 반환
+            if (r1, c1) == (tr, tc):
+                return adjM[r1][c1]
+            if (r2, c2) == (tr, tc):
+                return adjM[r2][c2]
 
 
 # ctrl + 방향키
-def ctrl_move(r, c, dr, dc):
+def ctrl_move(r, c, dr, dc, board):
     while is_in(r+dr, c+dc) and not board[r+dr][c+dc]:
         r, c = r + dr, c + dc
     if is_in(r+dr, c+dc) and board[r+dr][c+dc]:
@@ -57,33 +97,11 @@ def ctrl_move(r, c, dr, dc):
     return r, c
 
 
-# 최소 경로 찾기
-def bfs(r, c):
-    q = set()
-    q.add((r, c))
-    distance = [[16 for _ in range(4)] for _ in range(4)]
-    distance[r][c] = 0  # 시작점 표시
-    dirs = [(-1, 0), (0, -1), (1, 0), (0, 1)]
-
-    while q:
-        r, c = q.pop()
-
-        for dr, dc in dirs:
-            r1, c1 = r + dr, c + dc
-            r2, c2 = ctrl_move(r, c, dr, dc)
-
-            if not is_in(r1, c1) or (r, c) == (r2, c2):
-                continue
-
-            if distance[r1][c1] > distance[r][c] + 1:
-                distance[r1][c1] = distance[r][c] + 1
-                q.add((r1, c1))
-
-            if distance[r2][c2] > distance[r][c] + 1:
-                distance[r2][c2] = distance[r][c] + 1
-                q.add((r2, c2))
-
-    return distance
+# board 안에 있는지 판단
+def is_in(r, c):
+    if r < 0 or 3 < r or c < 0 or 3 < c:
+        return False
+    return True
 
 
 print(solution([[1,0,0,3],[2,0,0,0],[0,0,0,2],[3,0,1,0]], 1, 0))
