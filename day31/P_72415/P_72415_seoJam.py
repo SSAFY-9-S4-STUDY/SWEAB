@@ -29,12 +29,12 @@ def dfs(r, c, nr, nc, pairs, board, cnt):
     board = deepcopy(board)
 
     # [1] 첫 번째 짝카드로 이동
-    cnt += distance(r, c, nr, nc, board)
+    cnt += dijkstra(r, c, nr, nc, board)
     pairs.remove((nr, nc))
 
     # [2] 두 번째 짝 카드로 이동
     pr, pc = get_pair(nr, nc, pairs, board)
-    cnt += distance(nr, nc, pr, pc, board)
+    cnt += dijkstra(nr, nc, pr, pc, board)
     pairs.remove((pr, pc))
 
     board[nr][nc] = board[pr][pc] = 0  # 카드 뒤집기
@@ -50,25 +50,15 @@ def dfs(r, c, nr, nc, pairs, board, cnt):
         dfs(pr, pc, tr, tc, pairs, board, cnt)
 
 
-# (r, c)카드의 짝카드 반환
-def get_pair(r, c, pairs, board):
-    for pair in pairs:
-        pr, pc = pair
-        if board[r][c] == board[pr][pc]:
-            return pr, pc
-
-
 # (r, c)에서 (tr, tc)까지 최소 이동횟수 반환
-def distance(r, c, tr, tc, board):
-    q = deque([])
-    q.append((r, c))
+def dijkstra(r, c, tr, tc, board):
+    q = deque([(r, c)])
     adjM = [[16 for _ in range(4)] for _ in range(4)]
     adjM[r][c] = 0  # 시작점 표시
-    dirs = [(-1, 0), (0, -1), (1, 0), (0, 1)]
 
     while q:
         r, c = q.popleft()
-        for dr, dc in dirs:
+        for dr, dc in [(-1, 0), (0, -1), (1, 0), (0, 1)]:
             r1, c1 = r + dr, c + dc
             r2, c2 = ctrl_move(r, c, dr, dc, board)
 
@@ -86,6 +76,14 @@ def distance(r, c, tr, tc, board):
                 return adjM[r1][c1]
             if (r2, c2) == (tr, tc):
                 return adjM[r2][c2]
+
+
+# (r, c)카드의 짝카드 반환
+def get_pair(r, c, pairs, board):
+    for pair in pairs:
+        pr, pc = pair
+        if board[r][c] == board[pr][pc]:
+            return pr, pc
 
 
 # ctrl + 방향키
