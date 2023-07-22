@@ -195,3 +195,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 31
 1. [카드 짝 맞추기](https://school.programmers.co.kr/learn/courses/30/lessons/72415)
+
+> day 32
+1. [공 이동 시뮬레이션](https://school.programmers.co.kr/learn/courses/30/lessons/87391)
