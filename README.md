@@ -201,3 +201,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 33
 1. [에어컨](https://school.programmers.co.kr/learn/courses/30/lessons/214289)
+
+> day 34
+1. [상담원 인원] (https://school.programmers.co.kr/learn/courses/30/lessons/214288)
