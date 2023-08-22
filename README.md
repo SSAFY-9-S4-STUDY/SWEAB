@@ -204,3 +204,9 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 34
 1. [상담원 인원](https://school.programmers.co.kr/learn/courses/30/lessons/214288)
+
+> day 35
+1. [경주로 건설](https://school.programmers.co.kr/learn/courses/30/lessons/67259)
+
+> day 36
+1. [자물쇠와 열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
