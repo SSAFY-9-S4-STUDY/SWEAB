@@ -1,63 +1,31 @@
-from queue import deque
-
-MAX_VALUE = 1e5
-DIRS = [(0, 1), (0, -1), (1, 0), (-1, 0)]  # 동서남북
+from collections import deque
 
 
 def solution(board):
-    n = len(board)
-    dp = [[MAX_VALUE for _ in range(n)] for _ in range(n)]
-    dp[0][0] = 0
-    q = deque([(0, 0, 0), (0, 0, 2)])  # (row, column, dir)
+    N = len(board)
+    MAX_VALUE = 1e7
+    DIRS = [(0, 1), (0, -1), (1, 0), (-1, 0)]  # 동서남북
+    dp = [[[MAX_VALUE for _ in range(4)] for _ in range(N)] for _ in range(N)]
 
-    while q:
-        cr, cc, prev = q.popleft()
+    dp[0][0] = [0] * 4  # 시작점
+    queue = deque([(0, 0, 0), (0, 0, 2)])  # (row, column, dir)
+
+    while queue:
+        cr, cc, cdir = queue.popleft()
 
         for idx in range(4):
-            dr, dc = DIRS[idx]
-            nr, nc = cr + dr, cc + dc
+            nr, nc = cr + DIRS[idx][0], cc + DIRS[idx][1]
 
-            if nr < 0 or nc < 0 or nr >= n or nc >= n:
+            if nr < 0 or nc < 0 or nr >= N or nc >= N:
                 continue
 
             if board[nr][nc]:
                 continue
 
-            new_value = dp[cr][cc] + 100 if prev == idx else dp[cr][cc] + 600
+            new_value = dp[cr][cc][cdir] + (100 if cdir == idx else 600)
 
-            if dp[nr][nc] >= new_value:
-                dp[nr][nc] = new_value
-                q.append((nr, nc, idx))
+            if dp[nr][nc][idx] > new_value:
+                dp[nr][nc][idx] = new_value
+                queue.append((nr, nc, idx))
 
-    # print(dp)
-    return dp[n - 1][n - 1]
-
-
-print(solution([[0, 0, 0], [0, 0, 0], [0, 0, 0]]))
-print(
-    solution(
-        [
-            [0, 0, 0, 0, 0, 0, 0, 1],
-            [0, 0, 0, 0, 0, 0, 0, 0],
-            [0, 0, 0, 0, 0, 1, 0, 0],
-            [0, 0, 0, 0, 1, 0, 0, 0],
-            [0, 0, 0, 1, 0, 0, 0, 1],
-            [0, 0, 1, 0, 0, 0, 1, 0],
-            [0, 1, 0, 0, 0, 1, 0, 0],
-            [1, 0, 0, 0, 0, 0, 0, 0],
-        ]
-    )
-)
-print(solution([[0, 0, 1, 0], [0, 0, 0, 0], [0, 1, 0, 1], [1, 0, 0, 0]]))
-print(
-    solution(
-        [
-            [0, 0, 0, 0, 0, 0],
-            [0, 1, 1, 1, 1, 0],
-            [0, 0, 1, 0, 0, 0],
-            [1, 0, 0, 1, 0, 1],
-            [0, 1, 0, 0, 0, 1],
-            [0, 0, 0, 0, 0, 0],
-        ]
-    )
-)
+    return min(dp[-1][-1])
