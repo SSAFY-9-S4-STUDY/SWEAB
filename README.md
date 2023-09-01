@@ -210,3 +210,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 36
 1. [자물쇠와 열쇠](https://school.programmers.co.kr/learn/courses/30/lessons/60059)
+
+> day 37
+1. [다단계 칫솔 판매](https://school.programmers.co.kr/learn/courses/30/lessons/77486)
