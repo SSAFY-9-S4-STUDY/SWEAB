@@ -16,11 +16,11 @@ def solution(enroll, referral, seller, amount):
     while queue:
         person, gain = queue.popleft()
 
-        referral_gain = int(gain * 0.1)
+        referral_gain = gain // 10
         gain_dict[person] += gain - referral_gain
         referral = referral_dict[person]
 
-        if referral_dict[person] != "-" and referral_gain:
+        if referral != "-" and referral_gain:
             queue.append((referral, referral_gain))
 
     answer = list(gain_dict.values())
