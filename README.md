@@ -15,10 +15,10 @@
 <br><br>
 
 
-## 🙋‍♂️現) 스터디원 명단 및 백준 아이디
-|김관형|김한주|서재현|이장원|임준수|윤지현|문요환|   
+## 🙋‍♂️스터디원 및 백준 아이디
+|김관형|김한주|서재현|임준수|윤지현|문요환|오병철|   
 |:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-|kghyeong1592|rlagkswn37|fv00245|aster0|아이디|gus991121|ansdy9600|  
+|kghyeong1592|rlagkswn37|fv00245|-|gus991121|ansdy9600|-|  
 - 개인 정보(출신학교) 등이 기입되어있던 경우 설정에서 바꾸시고 적어주셔도 됩니다.  
 <br>
 
@@ -213,3 +213,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 37
 1. [다단계 칫솔 판매](https://school.programmers.co.kr/learn/courses/30/lessons/77486)
+
+> day 38
+1. [블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/60063)
