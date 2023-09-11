@@ -1,5 +1,4 @@
 from collections import deque
-
 def solution(board):
     # 1. 변수 설정
     # 맵의 크기
@@ -27,7 +26,7 @@ def solution(board):
 
     # 3. 함수 - dp 판단 후 이동 함수
     def move(hv, nr, nc, cost):
-        if min_cost[hv][nr][nc] < cost: return
+        if min_cost[hv][nr][nc] <= cost: return
         min_cost[hv][nr][nc] = cost
         queue.append((nr, nc, hv))  
 
