@@ -216,3 +216,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 38
 1. [블록 이동하기](https://school.programmers.co.kr/learn/courses/30/lessons/60063)
+
+> day 39
+1. [외벽 점검](https://school.programmers.co.kr/learn/courses/30/lessons/60062)
