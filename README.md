@@ -219,3 +219,6 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 39
 1. [외벽 점검](https://school.programmers.co.kr/learn/courses/30/lessons/60062)
+
+> day 40
+1. [기둥과 보 설치](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
