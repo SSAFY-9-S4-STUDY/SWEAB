@@ -1,4 +1,4 @@
-from collections import deque
+from itertools import combinations
 
 def solution(n, weak, dist):
     # 1. 변수 설정
@@ -6,32 +6,30 @@ def solution(n, weak, dist):
     N, M = len(weak), len(dist)
     # dist를 내림차순으로 정렬
     dist.sort(reverse=True)
-    # 취약점끼리의 거리 배열
-    weak_dist = [n-weak[-1] + weak[0]] + [weak[i+1] - weak[i] for i in range(N-1)] 
+    # 취약점끼리의 거리 
+    weak_dist = [weak[i+1] - weak[i] for i in range(N-1)] + [n-weak[-1] + weak[0]]
 
-    # 2. 경우의 수를 따져가며 최소 인원수 구하기 함수
-    queue = deque([(weak[:], 0, 0)])
-    while queue:
-        # 남은 취약점, 사람수, 취약점수
-        w, p, n = queue.popleft()
-        # 사람수가 최대치를 넘겼으면 더 이상 진행 X
-        if p == M: return -1
-        # 아니면 탐색 진행
-        for i in range(N):
-            # 이미 탐색한 취약점이면 패스
-            if not w[i]: continue
-            # 아니면 오른쪽으로 탐색 진행
-            w_tmp = w[:]  # 현재까지 점검한 취약점
-            cnt = 0  # 지금 사람이 셀 취약점
-            d = dist[p]  # 남은 거리
-            while d >= 0 and w_tmp[i]:
-                cnt += 1
-                w_tmp[i] = 0
-                i = (i+1)%N
-                d -= weak_dist[i]
-            # 탐색 기록을 큐에 저장
-            # 취약점 보완이 끝났으면 사람수 반환
-            if n + cnt == N: return p + 1
-            queue.append((w_tmp, p + 1, n + cnt))
+    # 2. 조합을 이용하여 탐색 거리를 제외
+    for n in range(1, M+1):
+        for comb in combinations(range(N), n):
+            now_weak_dist = weak_dist[:]
+            # 선택된 탐색거리 삭제
+            for idx in comb: now_weak_dist[idx] = 0
+            # 남은 탐색거리들을 등분해서 정리
+            d_parts, now_d = [], 0
+            for _ in range(N):
+                idx -= 1
+                if not now_weak_dist[idx]:
+                    d_parts.append(now_d)
+                    now_d = 0
+                else: now_d += weak_dist[idx]
+            # 등분한 탐색거리를 정렬
+            d_parts.sort(reverse=True)
+            # 등분한 탐색거리를 친구들에게 분배
+            for i in range(n):
+                if d_parts[i] > dist[i]: break
+            else: return n
 
-print(solution(12, 	[1, 5, 6, 10], [1, 2, 3, 4]))
+    return -1
+
+print(solution(12, 	[1, 3, 4, 9, 10], [3, 5, 7]))
