@@ -222,3 +222,10 @@ Extra. [쿼드트리](https://www.acmicpc.net/problem/1992) (트리)
 
 > day 40
 1. [기둥과 보 설치](https://school.programmers.co.kr/learn/courses/30/lessons/60061)
+
+> day 41
+1. [길 찾기 게임](https://school.programmers.co.kr/learn/courses/30/lessons/42892)
+
+> day 42
+1. [모두 0으로 만들기](https://school.programmers.co.kr/learn/courses/30/lessons/76503)
+
