@@ -1,42 +1,63 @@
-def nodeinfo2tree(nodeinfo):
-    tree = dict()
-    print(nodeinfo)
+import sys
+from copy import deepcopy
 
-    for idx, [cx, cy, cnum] in enumerate(nodeinfo):
-        tree[cnum] = []
-        parentIdx = idx - 1
+# 재귀 깊이 limit 설정 (nodeinfo의 길이가 1 이상 10,000 이하이므로!!!)
+sys.setrecursionlimit(10**4)
 
-        if parentIdx < 0:
-            continue
 
-        while nodeinfo[parentIdx][1] == cy:
-            parentIdx -= 1
+# 부모노드의 X축 기준 좌우로 자식 노드를 나누는 함수
+def split_nodes(nodeinfo):
+    parent = nodeinfo.pop(0)
+    leftNodes, rightNodes = [], []
 
-        tree[nodeinfo[parentIdx][2]].append(cnum)
+    for node in nodeinfo:
+        if parent[0] > node[0]:
+            leftNodes.append(node)
+        else:
+            rightNodes.append(node)
 
-        print(tree)
+    return parent, leftNodes, rightNodes
 
-    return tree
+
+# 전위 순회
+def preorder(nodeinfo, answer):
+    if not nodeinfo:
+        return
+
+    parent, leftNodes, rightNodes = split_nodes(nodeinfo)
+    answer.append(parent[2])
+    preorder(leftNodes, answer)
+    preorder(rightNodes, answer)
+
+
+# 후위 순회
+def postorder(nodeinfo, answer):
+    if not nodeinfo:
+        return
+
+    parent, leftNodes, rightNodes = split_nodes(nodeinfo)
+    postorder(leftNodes, answer)
+    postorder(rightNodes, answer)
+    answer.append(parent[2])
 
 
 def solution(nodeinfo):
-    answer = []
-
     # 0. nodeinfo에 노드번호 저장
-    for idx in range(len(nodeinfo)):
-        nodeinfo[idx].append(idx + 1)
+    for idx, node in enumerate(nodeinfo):
+        node.append(idx + 1)
 
     # 1. y-x 순 nodeinfo 정렬
     nodeinfo.sort(key=lambda node: (-node[1], node[0]))
 
-    # 2. 트리 만들기
-    tree = nodeinfo2tree(nodeinfo)
+    # 2. 전위 순회
+    preanswer = []
+    preorder(deepcopy(nodeinfo), preanswer)
 
-    # 3. 전위 순회
+    # 3. 후위 순회
+    postanswer = []
+    postorder(deepcopy(nodeinfo), postanswer)
 
-    # 4. 후위 순회
-
-    return answer
+    return [preanswer, postanswer]
 
 
 print(
